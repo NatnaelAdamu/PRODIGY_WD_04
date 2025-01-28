@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Natnael Adamu Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/1675f3a00b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="side-menu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contacts">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          <!-- <img src="images/bars-solid.svg" class="menu"> -->
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>Hay, I am <span>Natnael</span><br />Adamu from Ethiopia</h1>
+        </div>
+      </div>
+    </div>
+    <!-- -------------- About Section ---------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user2.JPG" alt="Natnael Adamu" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am a dedicated Computer Engineer passionate about software and
+              hardware development. I thrive on challenges and bring strong
+              problem-solving skills, developed through practical experience
+              with AI-based and web-based projects, as well as an SBI layer
+              project at INSA. Known for my punctuality, teamwork, and eagerness
+              to learn, I have further strengthened my programming skills
+              through hands-on projects and a Cisco networking certification,
+              preparing me to make meaningful contributions to technical
+              projects.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <!-- Skills Section -->
+
+            <div class="tab-contents active-tabs" id="skills">
+              <ul>
+                <li>
+                  <span>Programming</span><br />Java, C++, HTML5, CSS,
+                  JavaScript
+                </li>
+                <li><span>Networking</span><br />Cisco ITN</li>
+                <li>
+                  <span>Biometric Systems</span><br />SBI-Layer Development
+                </li>
+              </ul>
+            </div>
+
+            <!-- Experience Section -->
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Junior Software Developer Intern - INSA</span><br />
+                  Developed an SBI (Secure Biometric Interface) layer for the
+                  National ID project, applying real-life problem-solving
+                  skills. (June 2023 - Oct 2023)
+                </li>
+                <li>
+                  <span>Web Development Intern - Prodigy Infotech</span><br />
+                  Contributed to developing dynamic websites and improving user
+                  experience. (2025 - Present)
+                </li>
+                <li>
+                  <span>Volunteer Teacher</span><br />
+                  Taught summer classes and engaged in community education.
+                  (2023)
+                </li>
+              </ul>
+            </div>
+
+            <!-- Education Section -->
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>BSc in Computer Engineering</span><br />
+                  Bahir Dar University, Ethiopia (2019 - 2024, GPA: 3.66, Exit
+                  Exam: 84%)
+                </li>
+                <li>
+                  <span>Human-Centered Design Training</span><br />
+                  Completed at Bit Maker Space (2023)
+                </li>
+                <li>
+                  <span>Agri-Hackathon Participant</span><br />
+                  Participated at Bahir Dar University (2023)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------ Services Section ------------ -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-lists">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              I design responsive and user-friendly websites that meet modern
+              web standards and deliver great user experiences.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Creating intuitive and visually appealing user interfaces for web
+              and mobile applications.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>App Design</h2>
+            <p>
+              Developing efficient and scalable Android and iOS applications
+              tailored to client needs.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -----------portfolio----------- -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" alt="my work-1" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                JavaScript is the programming language of HTML and the Web.
+                JavaScript is easy to learn.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="my work-2" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                JavaScript is the programming language of HTML and the Web.
+                JavaScript is easy to learn.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="my work-3" />
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>
+                JavaScript is the programming language of HTML and the Web.
+                JavaScript is easy to learn.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!-- -------------Contacts----------------- -->
+
+    <div id="contacts">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i> natnaeladamu@gmail.com</p>
+            <p><i class="fa-solid fa-phone-volume"></i> +251921961544</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+              <a href="https://facebook.com/"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></a>
+              <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+            <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="example@gmail.com"
+                required
+              />
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Write your messages here!"
+              ></textarea>
+              <button class="btn btn2" type="submit">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copright">
+        <p>Copyright @ Natnael Adamu made from YouTube Video by KEVIN</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
